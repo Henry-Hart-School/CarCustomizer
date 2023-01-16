@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let car = Car(make: "Mazda", model: "MX-5", topSpeed: 125, acceleration: 7.7, handling: 5)
+    
+    //let accel_formatted = String(format: "%.2f", car.acceleration)
     var body: some View {
-        Text("Hello, world!")
+        Text(car.stringify())
             .padding()
     }
 }
